@@ -13,8 +13,7 @@ Config.DBChecking = true                  -- check if the database table, and co
 Config.CheckPacksCommand = 'checkpacks'   -- command to check all players who have received the starter pack
 
 Config.TargetResource = 'ox_target'       -- supported: ox_target, qb-target
-Config.InventoryResource =
-'ox_inventory'                            -- supported: ox_inventory, qb-inventory, ps-inventory, qs-inventory, codem-inventory
+Config.InventoryResource = 'ox_inventory'    -- supported: ox_inventory, qb-inventory, ps-inventory, qs-inventory, codem-inventory
 Config.SQLResource = 'oxmysql'            -- supported: oxmysql, mysql-async, ghmattimysql
 
 Config.UsePlayerLicense = true            -- if you want to use player license to check if they have received the starter pack or not
@@ -28,7 +27,7 @@ Config.CommandConfig = {                  -- command to give the starter package
     command_help     = 'Get your starter pack',
     starterpack_type = 'normal',
     starter_vehicle  = {
-        enable = true,
+        enable = false,
         model = 'adder',
         random_vehicle = false,
     }
@@ -115,8 +114,8 @@ Config.Locations = {
         coords           = vec4(-1040.479126, -2731.582520, 20.164062, 238.110229), -- Coordinates and heading of the NPC (ped)
 
         ped              = {                                                        -- Settings for the ped (NPC)
-            model = 'a_m_y_business_03',                                            -- Ped model (see the FiveM ped model list)
-            scenario = 'Standing',                                                  -- Ped scenario (animation/behavior)
+            model = 'player_one',                                            -- Ped model (see the FiveM ped model list)
+            scenario = 'WORLD_HUMAN_SMOKING_POT',                                     -- Ped scenario (animation/behavior)
         },
 
         safezone         = { -- Safe zone settings (optional)
@@ -131,7 +130,7 @@ Config.Locations = {
         },
 
         starter_vehicle  = {         -- Vehicle settings for players receiving a starter vehicle
-            enable = true,           -- Enable or disable the starter vehicle
+            enable = false,           -- Enable or disable the starter vehicle
             model = 'adder',         -- Vehicle model (from FiveM vehicle model list) will be ignored if random_vehicle is set to true
             random_vehicle = true,   -- Spawn a random vehicle from the list (true/false)
             teleport_player = false, -- Teleport player to the vehicle (true/false)
@@ -169,10 +168,11 @@ Config.RandomVehicles = { -- list of vehicles to be given randomly to the player
 Config.StarterPackItems = { -- items that will be given to player
     ["normal"] = {
         { item = 'burger',   amount = 5 },
-        { item = 'sprunk',   amount = 5 },
-        { item = 'phone',    amount = 1 },
-        { item = 'lockpick', amount = 5 },
-        { item = 'money',    amount = 5000 },
+        { item = 'water',   amount = 3 },
+        { item = 'sprunk',   amount = 3 },
+        { item = 'bandage',   amount = 1 },
+        { item = 'lockpick',  amount = 1 },
+        { item = 'money',   amount = 2500 },
     },
     -- add more starter pack types here
 }
