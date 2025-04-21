@@ -1,6 +1,7 @@
 {
     "already_received": "You have already received your starter pack",
     "success": "You have received your starter pack, Enjoy!",
+    "hintsuccess": "Head Downstairs and see Jimmy for a free tour around Los Santos!",
     "progress_cancelled": "You have cancelled the starter pack progress",
     "not_near_receiving_point": "You are not near the receiving point",
     "no_available_spawn": "Possible area for vehicle spawn is occupied",
