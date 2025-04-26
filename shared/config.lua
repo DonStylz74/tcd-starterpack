@@ -36,7 +36,7 @@ Config.CommandConfig = {                  -- command to give the starter package
 Config.DialogInfo = { -- dialog settings for the starter pack
     enable = true,
     title = 'Starter Pack',
-    dialog_type = 'rules', -- available types: rules, quiz, captcha (only one type can be enabled)
+    dialog_type = 'quiz', -- available types: rules, quiz, captcha (only one type can be enabled)
     alert_description = 'You will receive a starter pack after accepting the rules / completing the quiz/captcha.',
 
     quiz = {
@@ -111,11 +111,11 @@ Config.Locations = {
         label            = 'Get your starter pack',                                 -- Target label (shown to the player)
         icon             = 'fa-solid fa-gift',                                      -- Target icon (from FontAwesome)
 
-        coords           = vec4(-1040.479126, -2731.582520, 20.164062, 238.110229), -- Coordinates and heading of the NPC (ped)
+        coords           = vec4(-1041.3414, -2748.9387, 21.3432, 147.1163), -- Coordinates and heading of the NPC (ped)
 
         ped              = {                                                        -- Settings for the ped (NPC)
             model = 'player_one',                                            -- Ped model (see the FiveM ped model list)
-            scenario = 'WORLD_HUMAN_SMOKING_POT',                                     -- Ped scenario (animation/behavior)
+            scenario = 'WORLD_HUMAN_STAND_MOBILE',                                     -- Ped scenario (animation/behavior)
         },
 
         safezone         = { -- Safe zone settings (optional)
@@ -145,7 +145,7 @@ Config.Locations = {
         },
 
         receiving_radius = 20.0, -- Radius around the location where players can receive the starter pack
-        distance         = 2.0,  -- Distance from the ped to interact with it
+        distance         = 5.0,  -- Distance from the ped to interact with it
     },
     -- add more locations here
 }
