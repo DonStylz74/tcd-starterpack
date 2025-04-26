@@ -208,7 +208,7 @@ RegisterNetEvent('cfx-tcd-starterpack:Server:ClaimStarterpack', function(starter
     updatePlayerData(GetPlayerName(src), license, true)
     sendDiscordLog(src, "Player has received their starter pack")
     Config.Notification(locale("success"), "success", true, src)
-    Wait(4000)
+	Wait(4000)
     Config.Notification(locale("hintsuccess"), "success", true, src)
 end)
 
