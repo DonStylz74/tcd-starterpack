@@ -173,6 +173,7 @@ Config.StarterPackItems = { -- items that will be given to player
         { item = 'bandage',   amount = 1 },
         { item = 'lockpick',  amount = 1 },
         { item = 'money',   amount = 2500 },
+        { item = 'wallet',  amount = 1 },
     },
     -- add more starter pack types here
 }
